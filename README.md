@@ -14,5 +14,4 @@ Adds a redirect button in youtube videos to an [Invidious](https://invidious.io/
 Invidious is a light privacy focused client for youtube.
 
 ## block-yt-ads
-Adds a redirect button in youtube videos to an [Invidious](https://github.com/iv-org/invidious) instance.
-Invidious is a lightweight privacy focused youtube client.
+skips youtube video ads
