@@ -10,8 +10,11 @@ To use these scripts, place them in the directory:
 ```
 
 ## link-to-invidious
-Adds a redirect button in youtube videos to an [Invidious](https://invidious.io/) instance.
+Adds a redirect button in youtube videos to an [Invidious](https://github.com/iv-org/invidious) instance.
 Invidious is a light privacy focused client for youtube.
 
 ## block-yt-ads
 skips youtube video ads
+
+## twitter-to-nitter-proxy
+Proxy twitter urls to [Nitter](https://github.com/zedeus/nitter) which is a lightweight twitter client.
