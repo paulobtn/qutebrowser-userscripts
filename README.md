@@ -1,8 +1,8 @@
-#My userscripts for qutebrowser
+# My userscripts for qutebrowser
 
-My browser of choice is Qutebrowser and one of the reasons is a nice native support for
-Greasemonkey userscripts where I can create custom behaviour for individual pages.
-In this repository I will dump my personal configuration, don't expect major documentations.
+My browser of choice is [Qutebrowser](https://github.com/qutebrowser/qutebrowser) and one of the reasons is the really nice native support for
+[Greasemonkey](https://www.greasespot.net/) userscripts where I can create custom behaviour for individual pages.
+In this repository I will dump my personal configuration. Use it if you want and don't expect major documentations.
 
 To use these scripts, place them in the directory: 
 ```bash
@@ -14,4 +14,5 @@ Adds a redirect button in youtube videos to an [Invidious](https://invidious.io/
 Invidious is a light privacy focused client for youtube.
 
 ## block-yt-ads
-skips the youtube video ads
+Adds a redirect button in youtube videos to an [Invidious](https://github.com/iv-org/invidious) instance.
+Invidious is a lightweight privacy focused youtube client.
