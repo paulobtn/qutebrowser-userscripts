@@ -1,4 +1,4 @@
-#My userscripts for qutebrowser
+# My userscripts for qutebrowser
 
 My browser of choice is Qutebrowser and one of the reasons is a nice native support for
 Greasemonkey userscripts where I can create custom behaviour for individual pages.
