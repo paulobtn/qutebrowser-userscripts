@@ -17,4 +17,7 @@ Invidious is a light privacy focused client for youtube.
 skips youtube video ads
 
 ## twitter-to-nitter-proxy
-Proxy twitter urls to [Nitter](https://github.com/zedeus/nitter) which is a lightweight twitter client.
+Proxies Twitter urls to [Nitter](https://github.com/zedeus/nitter) which is a lightweight Twitter client.
+
+## reddit-to-teddit-proxy
+Proxies Reddit urls to [Teddit](https://codeberg.org/teddit/teddit) which is a lightweight Reddit client.
