@@ -14,11 +14,11 @@ var instance='vid.puffyan.us';
 //find the video name
 var title=Array.prototype.slice.call(document.getElementsByTagName('h1'));
 
-//observe changes and add link to invidious if it doesn't exist
+//observe changes and add button if it doesn't exist
 var observer=new MutationObserver(function(mutations){
   mutations.forEach(function(mutation){
-      var skip=Array.prototype.slice.call(mutation.target.getElementsByClassName('inv-btn'));
-      if(skip<1){
+      var invbtn=Array.prototype.slice.call(mutation.target.getElementsByClassName('inv-btn'));
+      if(invbtn<1){
           title=Array.prototype.slice.call(mutation.target.getElementsByTagName('h1'));
           addbtn();
       }
@@ -28,7 +28,6 @@ var observer=new MutationObserver(function(mutations){
 addbtn();
 observer.observe(document.body,{childList:true,subtree:true});
 
-// add link to invidious
 function addbtn(){
     for(var i=0;i<title.length;i++){
         var btn=document.createElement('a');
@@ -38,10 +37,15 @@ function addbtn(){
                                   display:inline-block;font-weight:400;
                                   padding:.3rem;"
                        >Watch on ${instance}</h2>`;
+        btn.href='javascript:void(0)';
+        btn.onclick=function(){redir();};
         btn.className='inv-btn';
-        var url=new URL(window.location.href);
-        url.hostname=instance;
-        btn.href=url;
         title[i].parentNode.appendChild(btn);
     }
+}
+
+function redir(){
+    var url=new URL(window.location.href);
+    url.hostname=instance;
+    location.href=url;
 }
