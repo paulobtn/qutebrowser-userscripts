@@ -14,7 +14,7 @@ var instance='vid.puffyan.us';
 //find the video name
 var title=Array.prototype.slice.call(document.getElementsByTagName('h1'));
 
-//observe changes during load and add the link to invidious after each one
+//observe changes and add link to invidious if it doesn't exist
 var observer=new MutationObserver(function(mutations){
   mutations.forEach(function(mutation){
       var skip=Array.prototype.slice.call(mutation.target.getElementsByClassName('inv-btn'));
