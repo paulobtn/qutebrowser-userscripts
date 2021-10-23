@@ -12,14 +12,14 @@
 var instance='vid.puffyan.us';
 
 //find the video name
-var title=Array.prototype.slice.call(document.getElementsByTagName('h1'));
+var title=document.getElementsByTagName('h1')[0];
 
 //observe changes and add button if it doesn't exist
 var observer=new MutationObserver(function(mutations){
   mutations.forEach(function(mutation){
-      var invbtn=Array.prototype.slice.call(mutation.target.getElementsByClassName('inv-btn'));
-      if(invbtn<1){
-          title=Array.prototype.slice.call(mutation.target.getElementsByTagName('h1'));
+      let invbtn = mutation.target.querySelector('.inv-btn');
+      if(!invbtn){
+          title=mutation.target.getElementsByTagName('h1')[0];
           addbtn();
       }
   });
@@ -29,7 +29,7 @@ addbtn();
 observer.observe(document.body,{childList:true,subtree:true});
 
 function addbtn(){
-    for(var i=0;i<title.length;i++){
+      if(title){
         var btn=document.createElement('a');
         btn.innerHTML=`<h2 style="color:#3ea6ff;
                                   text-decoration:none;
@@ -40,8 +40,8 @@ function addbtn(){
         btn.href='javascript:void(0)';
         btn.onclick=function(){redir();};
         btn.className='inv-btn';
-        title[i].parentNode.appendChild(btn);
-    }
+        title.parentNode.appendChild(btn);
+      }
 }
 
 function redir(){
