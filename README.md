@@ -11,7 +11,7 @@ To use these scripts, place them in the directory:
 
 ## link-to-invidious
 Adds a redirect button in youtube videos to an [Invidious](https://github.com/iv-org/invidious) instance.
-Invidious is a light privacy focused client for youtube.
+Invidious is a lightweight privacy focused client for youtube.
 
 ## block-yt-ads
 skips youtube video ads
