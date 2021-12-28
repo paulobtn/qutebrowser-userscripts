@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name           twitter to nitter proxy
+// @name           medium to scribe proxy
 // @namespace      paulobtn's userscripts
-// @include        /^http(s|)://(www\.|)twitter\.com/.*$/
+// @include        /(^|^[^:]+:\/\/|[^\.]+\.)medium\.com/.*$/
 // @run-at         document-start
 // ==/UserScript==
 
-var instance='nitter.domain.net'; 
+var instance='scribe.rip';
 
 var url=new URL(window.location.href);        
 url.hostname=instance;
