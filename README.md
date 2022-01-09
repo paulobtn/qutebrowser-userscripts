@@ -23,4 +23,4 @@ Proxies Twitter urls to [Nitter](https://github.com/zedeus/nitter) which is a li
 Proxies Reddit urls to [Teddit](https://codeberg.org/teddit/teddit) or [libreddit](https://github.com/spikecodes/libreddit) which are lightweight Reddit clients.
 
 ## medium-proxy
-Proxies medium urls (including subdomain) to [sribe](scribe.rip).
+Proxies medium urls (including subdomain) to [scribe](scribe.rip).
